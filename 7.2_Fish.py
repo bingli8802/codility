@@ -20,3 +20,25 @@ def solution(A, B):
         else:
             stack.append(A[i])
     return alive + len(stack)
+
+
+# you can write to stdout for debugging purposes, e.g.
+# print("this is a debug message")
+
+def solution(A, B):
+    # write your code in Python 3.6
+    alive = 0
+    stack = []
+    for i, v in enumerate(B):
+        if v == 0:
+            if len(stack) == 0:
+                alive += 1
+            else:
+                try:
+                    while stack[-1] < A[i]:
+                        stack.pop()
+                except IndexError:
+                    alive += 1
+        else:
+            stack.append(A[i])
+    return alive + len(stack)

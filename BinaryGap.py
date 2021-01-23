@@ -14,3 +14,5 @@ def solution(N):
                 res = max(res, cur)
                 cur = 0
     return res
+
+#MinDistinct

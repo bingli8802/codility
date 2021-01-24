@@ -1,0 +1,16 @@
+def solution(A):
+	length = len(A)
+	start = [0] * length
+	end = [0] * length
+
+	for i in reversed(range(length-1)):
+		start[i] = max(0, start[i+1] + A[i])
+
+	for i in range(1, length):
+		end[i] = max(0, end[i-1] + A[i])
+
+	maxDoubleSlice = 0
+	for i in range(1, length-1):
+		maxDoubleSlice = max(maxDoubleSlice, start[i+1] + end[i-1])
+
+	return maxDoubleSlice

@@ -1,15 +1,19 @@
 Codility面试题——4个整形数字可以组成的24小时制时间的可能性个数
 来自微软的在线测试
 
-输入参数4个int值，(int a,int b,int c,int d)，这四个数字满足0 // write your code in Java SE 8 int[] numbers = new int[]{A,B,C,D}; int ans = 0; List a = new ArrayList(); for (int i = 0; i System.out.println(hour + ":" +min); ans++; a.add(hour*100 + min); } } return ans; } }
+输入参数4个int值，(int a,int b,int c,int d)，这四个数字满足0 
+// write your code in Java SE 8 
+int[] numbers = new int[]{A,B,C,D}; 
+int ans = 0; 
+List a = new ArrayList(); 
+for (int i = 0; i System.out.println(hour + ":" +min); ans++; a.add(hour*100 + min); } } return ans; } }
 
 这道题和leetcode中第949号问题有异曲同工之处
 https://leetcode-cn.com/problems/largest-time-for-given-digits/
 
 在Codility网站上实现3道题目，语言不限要在2个小时内完成
 1 给一个数组，里面是随机的整数，求数组的且值
-比如一个数组[2,1,5,6,8,10]
-求2和1的&后的值再与5做&，以此类推
+比如一个数组[2,1,5,6,8,10]，求2和1的&后的值再与5做&，以此类推
 2 给一个数组，里面是随机数，找到第一个不重复的数字，如果没有则返回-1
 比如 一个数组[2,1,2,8,8,10]，则需要返回1
 一个数组[4,4,6,6],则返回-1
@@ -24,7 +28,3 @@ https://leetcode-cn.com/problems/largest-time-for-given-digits/
 有没有用过开源框架（js、.net等）、自动化测试工具
 数据库有没有做过调优
 最后给的反馈是题目做的还可以，行业不相关，这个很坑爹，浪费了半天时间
-面试官的问题：
-
-问
-一些.net 基础知识，记得问到yield return什么意思，当时没答出来 有没有用过开源框架（js、.net等）、自动化测试工具 数据库有没有做过调优 最后给的反馈是题目做的还可以，行业不相关，这个很坑爹，浪费了半天时间
